@@ -238,24 +238,49 @@ body {
 
 .experience-badge {
   position: absolute;
-  bottom: 20px;
-  left: -20px;
-  background: #6c5ce7;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(108, 92, 231, 0.3);
+  bottom: 16px;
+  left: 16px;
+  background: #fff;
+  color: #6c5ce7;
+  border-radius: 24px;
+  padding: 8px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  z-index: 2;
 }
 
 .badge-number {
-  font-size: 2rem;
-  font-weight: 700;
-  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 6px;
 }
 
 .badge-text {
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 600px) {
+  .experience-badge {
+    position: static;
+    margin: 12px auto 0 auto;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    border-radius: 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    justify-content: center;
+  }
+  .badge-number {
+    font-size: 1.1rem;
+    margin-right: 4px;
+  }
+  .badge-text {
+    font-size: 0.95rem;
+  }
 }
 
 .about-text h2 {
